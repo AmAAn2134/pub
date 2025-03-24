@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforce Rating Wise Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            gap: 3px;
+        }
+
+        .bar {
+            width: 10px;
+            height: 30px;
+            border-radius: 3px;
+        }
+
+        .blue {
+            background-color: #4682B4;
+        }
+
+        .yellow {
+            background-color: #FFA500;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .blue-text {
+            color: #4682B4;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .rating-section ul li {
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .rating-section ul li:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="bar blue"></div>
+            <div class="bar yellow"></div>
+        </div>
+        <div>
+            <div class="title">
+                <span class="black">CODE</span><span class="blue-text">FORCES</span>
+            </div>
+            <div class="subtitle">Sponsored by <b>TON</b></div>
+        </div>
+    </div>
+    <main>
+        <input type="text" id="searchBar" placeholder="Search for questions..." onkeyup="filterQuestions()">
+        <!-- Rating: 800 -->
+        <section class="rating-section">
+            <h2>Rating: 800</h2>
+            <ul>
+                <ul>
+                    <li><input type="checkbox"> 1) Three Pairwise Maximums</li>
+                    <li><input type="checkbox"> 2) Required Remainder</li>
+                    <li><input type="checkbox" checked> 3) Magical Sticks</li>
+                    <li><input type="checkbox" checked> 4) Candies and Two Sisters</li>
+                    <li><input type="checkbox" checked> 5) Mezo Playing Zoma (basic string)</li>
+                    <li><input type="checkbox" checked> 6) Minutes Before the New Year</li>
+                    <li><input type="checkbox" checked> 7) Changing Volume</li>
+                    <li><input type="checkbox" checked> 8) Two Rabbits</li>
+                    <li><input type="checkbox" checked> 9) Elections</li>
+                    <li><input type="checkbox" checked> 10) Elephant</li>
+                    <li><input type="checkbox" checked> 11) Little Nikita</li>
+                    <li><input type="checkbox" checked> 12) Yogurt Sale</li>
+                    <li><input type="checkbox" checked> 13) Box is Pull</li>
+                    <li><input type="checkbox"> 14) Two Elevators</li>
+                    <li><input type="checkbox"> 15) Little Artem and Presents</li>
+                    <li><input type="checkbox"> 16) Save Luke</li>
+                    <li><input type="checkbox"> 17) Robin Hood and the Major Oak</li>
+                    <li><input type="checkbox"> 18) Problem Generator</li>
+                    <li><input type="checkbox"> 19) Three Swimmers</li>
+                    <li><input type="checkbox"> 20) Odd Set</li>
+                    <li><input type="checkbox"> 21) A Variety of Operations</li>
+                    <li><input type="checkbox"> 22) Who's Opposite?</li>
+                    <li><input type="checkbox"> 23) Luntik and Concerts</li>
+                    <li><input type="checkbox"> 24) Mathematical Addition</li>
+                    <li><input type="checkbox"> 25) Consecutive Sum Riddle</li>
+                    <li><input type="checkbox"> 26) Square Counting</li>
+                    <li><input type="checkbox"> 27) Lost Permutation</li>
+                    <li><input type="checkbox"> 28) Morning</li>
+                    <li><input type="checkbox"> 29) Puzzle Pieces</li>
+                    <li><input type="checkbox"> 30) Divisibility Problem</li>
+                    <li><input type="checkbox"> 31) Array with Odd Sum</li>
+                    <li><input type="checkbox"> 32) Collecting Coins</li>
+                    <li><input type="checkbox"> 33) Yet Another Dividing into Teams</li>
+                    <li><input type="checkbox"> 34) Pens and Pencils</li>
+                    <li><input type="checkbox"> 35) Equalize Prices Again</li>
+                    <li><input type="checkbox"> 36) CME</li>
+                    <li><input type="checkbox"> 37) Remove a Progression</li>
+                    <li><input type="checkbox"> 38) Ropewalkers</li>
+                    <li><input type="checkbox"> 39) Restoring Three Numbers</li>
+                    <li><input type="checkbox"> 40) Sea Battle (1331A)</li>
+                    <li><input type="checkbox"> 41) Water Buying</li>
+                    <li><input type="checkbox"> 42) Integer Sequence Dividing</li>
+                    <li><input type="checkbox"> 43) Dice Rolling</li>
+                    <li><input type="checkbox"> 44) Petya and Origami</li>
+                    <li><input type="checkbox"> 45) Frog Jumping (1077A)</li>
+                    <li><input type="checkbox"> 46) Little C Loves 3 I (1047A)</li>
+                    <li><input type="checkbox"> 47) Piles With Stones</li>
+                    <li><input type="checkbox"> 48) Splits (964A)</li>
+                    <li><input type="checkbox"> 49) Paper Airplanes</li>
+                    <li><input type="checkbox"> 50) Key Races</li>
+                    <li><input type="checkbox"> 51) Kevin and Arithmetic</li>
+                    <li><input type="checkbox"> 52) Reorder</li>
+                    <li><input type="checkbox"> 53) Robot Program</li>
+                    <li><input type="checkbox"> 54) Strange Table</li>
+                    <li><input type="checkbox"> 55) Red and Blue Beans</li>
+                    <li><input type="checkbox"> 56) Plus One on the Subset</li>
+                    <li><input type="checkbox"> 57) Vlad and Candies</li>
+                    <li><input type="checkbox"> 58) Accumulation of Dominoes</li>
+                    <li><input type="checkbox"> 59) The Ultimate Square</li>
+                    <li><input type="checkbox"> 60) Bun Lover</li>
+                    <li><input type="checkbox"> 61) Ambitious Kid</li>
+                    <li><input type="checkbox"> 62) Goals of Victory</li>
+                    <li><input type="checkbox"> 63) Treasure Chest</li>
+                </ul>
+            </ul>
+        </section>
+
+        <!-- Rating: 900 -->
+        <section class="rating-section">
+            <h2>Rating: 900</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Multiply by 2, divide by 6</li>
+                <li><input type="checkbox"> 2) Alarm Clock</li>
+                <li><input type="checkbox"> 3) Orac and Factors</li>
+                <li><input type="checkbox"> 4) Nastya and Rice</li>
+                <li><input type="checkbox"> 5) Food Buying</li>
+                <li><input type="checkbox"> 6) Candies Division</li>
+                <li><input type="checkbox"> 7) New Year Garland</li>
+                <li><input type="checkbox"> 8) Forgetting Things</li>
+                <li><input type="checkbox"> 9) Chips Moving</li>
+                <li><input type="checkbox"> 10) XORinacci</li>
+                <li><input type="checkbox"> 11) Stickers and Toys</li>
+                <li><input type="checkbox"> 12) Equalize Prices</li>
+                <li><input type="checkbox"> 13) Parity</li>
+                <li><input type="checkbox"> 14) Margarite and the best present</li>
+                <li><input type="checkbox"> 15) Trip For Meal</li>
+                <li><input type="checkbox"> 16) Tricky Sum</li>
+                <li><input type="checkbox"> 17) Even Odds</li>
+                <li><input type="checkbox"> 18) Odd Grasshopper</li>
+                <li><input type="checkbox"> 19) Anti Light's Cell Guessing</li>
+                <li><input type="checkbox"> 20) DIV + MOD</li>
+                <li><input type="checkbox"> 21) Vasilije in Cacak</li>
+                <li><input type="checkbox"> 22) Three Threadlets</li>
+            </ul>
+        </section>
+        <!-- Rating: 1000 -->
+        <section class="rating-section">
+            <h2>Rating: 1000</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Board Moves</li>
+                <li><input type="checkbox"> 2) Heating</li>
+                <li><input type="checkbox"> 3) Magic Stick</li>
+                <li><input type="checkbox"> 4) Payment Without Change</li>
+                <li><input type="checkbox"> 5) BowWow and the Timetable</li>
+                <li><input type="checkbox"> 6) Minimum Integer</li>
+                <li><input type="checkbox"> 7) Buying a TV Set</li>
+                <li><input type="checkbox"> 8) Function Height</li>
+                <li><input type="checkbox"> 9) Pair of Toys</li>
+                <li><input type="checkbox"> 10) New Building for SIS</li>
+                <li><input type="checkbox"> 11) Pizza, Pizza, Pizza!!!</li>
+                <li><input type="checkbox"> 12) Olesya and Rodion</li>
+                <li><input type="checkbox"> 13) Drazil and Date</li>
+                <li><input type="checkbox"> 14) Blocked Points</li>
+                <li><input type="checkbox"> 15) The number of positions</li>
+                <li><input type="checkbox"> 16) Cifera</li>
+                <li><input type="checkbox"> 17) Theatre Square</li>
+                <li><input type="checkbox"> 18) Buying Torches</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1100 -->
+        <section class="rating-section">
+            <h2>Rating: 1100</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Sum of Odd Integers</li>
+                <li><input type="checkbox"> 2) Yet Another Meme Problem</li>
+                <li><input type="checkbox"> 3) Sweet Problem</li>
+                <li><input type="checkbox"> 4) Math Problem</li>
+                <li><input type="checkbox"> 5) Merge it!</li>
+                <li><input type="checkbox"> 6) Div Times Mod</li>
+                <li><input type="checkbox"> 7) Vova and Train</li>
+                <li><input type="checkbox"> 8) High School: Become Human</li>
+                <li><input type="checkbox"> 9) The Eternal Immortality</li>
+                <li><input type="checkbox"> 10) Parade</li>
+                <li><input type="checkbox"> 11) Infinite Sequence</li>
+                <li><input type="checkbox"> 12) Hexagons!</li>
+                <li><input type="checkbox"> 13) The Monster and the Squirrel</li>
+                <li><input type="checkbox"> 14) Problem About Equation</li>
+                <li><input type="checkbox"> 15) Cubical Planet</li>
+                <li><input type="checkbox"> 16) Max and Mex</li>
+                <li><input type="checkbox"> 17) Paint the Array</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1200 -->
+        <section class="rating-section">
+            <h2>Rating: 1200</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Magical Calendar</li>
+                <li><input type="checkbox"> 2) Book Reading</li>
+                <li><input type="checkbox"> 3) Make Them Equal</li>
+                <li><input type="checkbox"> 4) Equations of Mathematical Magic</li>
+                <li><input type="checkbox"> 5) Table Tennis Game 2</li>
+                <li><input type="checkbox"> 6) Moore's Law</li>
+                <li><input type="checkbox"> 7) The Wall</li>
+                <li><input type="checkbox"> 8) Hungry Sequence</li>
+                <li><input type="checkbox"> 9) Square</li>
+                <li><input type="checkbox"> 10) Plus Minus Permutation</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1300 -->
+        <section class="rating-section">
+            <h2>Rating: 1300</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Pluses and Minuses</li>
+                <li><input type="checkbox"> 2) Swords</li>
+                <li><input type="checkbox"> 3) Messages</li>
+                <li><input type="checkbox"> 4) Forecast</li>
+                <li><input type="checkbox"> 5) Duff in Love</li>
+                <li><input type="checkbox"> 6) Plant</li>
+                <li><input type="checkbox"> 7) Magical Array</li>
+                <li><input type="checkbox"> 8) Cookies</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1400 -->
+        <section class="rating-section">
+            <h2>Rating: 1400</h2>
+            <ul>
+                <li><input type="checkbox"> 1) National Project</li>
+                <li><input type="checkbox"> 2) Birthday</li>
+                <li><input type="checkbox"> 3) Very Beautiful Number</li>
+                <li><input type="checkbox"> 4) Special Task</li>
+                <li><input type="checkbox"> 5) Flying Saucer Segments</li>
+                <li><input type="checkbox"> 6) Limit</li>
+                <li><input type="checkbox"> 7) Measuring Lengths in Baden</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1500 -->
+        <section class="rating-section">
+            <h2>Rating: 1500</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Happy Birthday</li>
+                <li><input type="checkbox"> 2) Polycarp Restores Permutation</li>
+                <li><input type="checkbox"> 3) Guest Student</li>
+                <li><input type="checkbox"> 4) Sum</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1600 -->
+        <section class="rating-section">
+            <h2>Rating: 1600</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Celex Update</li>
+                <li><input type="checkbox"> 2) Diagonal Walking v.2</li>
+                <li><input type="checkbox"> 3) Nastya and a Wardrobe</li>
+                <li><input type="checkbox"> 4) Divisibility</li>
+                <li><input type="checkbox"> 5) Polycarpus' Dice</li>
+                <li><input type="checkbox"> 6) Dreamoon and Sums</li>
+                <li><input type="checkbox"> 7) Magic Formulas</li>
+                <li><input type="checkbox"> 8) Reflection</li>
+                <li><input type="checkbox"> 9) Repaintings</li>
+                <li><input type="checkbox"> 10) Jumping Jack</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1700 -->
+        <section class="rating-section">
+            <h2>Rating: 1700</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Superhero Battle</li>
+                <li><input type="checkbox"> 2) Flea</li>
+            </ul>
+        </section>
+
+
+        <!-- Rating: 1800 -->
+        <section class="rating-section">
+            <h2>Rating: 1800</h2>
+            <ul>
+                <li><input type="checkbox"> 1) The Big Race</li>
+                <li><input type="checkbox"> 2) Squares</li>
+                <li><input type="checkbox"> 3) The Race</li>
+                <li><input type="checkbox"> 4) Hyperdrive</li>
+                <li><input type="checkbox"> 5) Laser</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 1900 -->
+        <section class="rating-section">
+            <h2>Rating: 1900</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Fractions</li>
+                <li><input type="checkbox"> 2) Road to Post Office</li>
+                <li><input type="checkbox"> 3) A rectangle</li>
+                <li><input type="checkbox"> 4) Vasily the Bear and Fly</li>
+                <li><input type="checkbox"> 5) Divisibility Test</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2000 -->
+        <section class="rating-section">
+            <h2>Rating: 2000</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Right Expansion Of The Mind</li>
+                <li><input type="checkbox"> 2) Special Permutations</li>
+                <li><input type="checkbox"> 3) Greedy Arkady</li>
+                <li><input type="checkbox"> 4) A Determined Cleanup</li>
+                <li><input type="checkbox"> 5) Vanya and Field</li>
+                <li><input type="checkbox"> 6) Count Good Substrings</li>
+                <li><input type="checkbox"> 7) Capture Valerian</li>
+                <li><input type="checkbox"> 8) Equation</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2100 -->
+        <section class="rating-section">
+            <h2>Rating: 2100</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Marmots (easy)</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2200 -->
+        <section class="rating-section">
+            <h2>Rating: 2200</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Marmots (medium)</li>
+                <li><input type="checkbox"> 2) Plumber</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2300 -->
+        <section class="rating-section">
+            <h2>Rating: 2300</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Square Equation Roots</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2400 -->
+        <section class="rating-section">
+            <h2>Rating: 2400</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Self-exploration</li>
+                <li><input type="checkbox"> 2) The Last Fight Between Human and AI</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2500 -->
+        <section class="rating-section">
+            <h2>Rating: 2500</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Game</li>
+                <li><input type="checkbox"> 2) Olympic Games</li>
+                <li><input type="checkbox"> 3) On Iteration of One Well-Known Function</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2600 -->
+        <section class="rating-section">
+            <h2>Rating: 2600</h2>
+            <ul>
+                <li><input type="checkbox"> 1) The Sum of the k-th Powers</li>
+                <li><input type="checkbox"> 2) Endless Matrix</li>
+                <li><input type="checkbox"> 3) Interesting Sequence</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2700 -->
+        <section class="rating-section">
+            <h2>Rating: 2700</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Wojtek and Card Tricks</li>
+                <li><input type="checkbox"> 2) Fox and Perfect Sets</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2800 -->
+        <section class="rating-section">
+            <h2>Rating: 2800</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Rainbow Balls</li>
+                <li><input type="checkbox"> 2) Vasya and Polynomial</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 2900 -->
+        <section class="rating-section">
+            <h2>Rating: 2900</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Kirchhoff's Current Loss</li>
+                <li><input type="checkbox"> 2) Make Square</li>
+                <li><input type="checkbox"> 3) Security System</li>
+                <li><input type="checkbox"> 4) Finding Expected Value codeforces</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 3000 -->
+        <section class="rating-section">
+            <h2>Rating: 3000</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Circle of Numbers</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 3100 -->
+        <section class="rating-section">
+            <h2>Rating: 3100</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Circles of Waiting</li>
+                <li><input type="checkbox"> 2) Evil</li>
+                <li><input type="checkbox"> 3) Captain of Knights</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 3200 -->
+        <section class="rating-section">
+            <h2>Rating: 3200</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Geometric Progressions</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 3300 -->
+        <section class="rating-section">
+            <h2>Rating: 3300</h2>
+            <ul>
+                <li><input type="checkbox"> 1) El Toll Caves</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 3400 -->
+        <section class="rating-section">
+            <h2>Rating: 3400</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Number Discovery</li>
+            </ul>
+        </section>
+
+        <!-- Rating: 3500 -->
+        <section class="rating-section">
+            <h2>Rating: 3500</h2>
+            <ul>
+                <li><input type="checkbox"> 1) Forest Fires</li>
+                <li><input type="checkbox"> 2) Heroes of Might</li>
+                <li><input type="checkbox"> 3) Count Permutations</li>
+            </ul>
+        </section>
+
+        <!-- Add more sections for other ratings -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Codeforce Questions. All rights reserved.</p>
+    </footer>
+    <script>
+        function filterQuestions() {
+            const searchInput = document.getElementById('searchBar').value.toLowerCase();
+            const sections = document.querySelectorAll('.rating-section');
+            sections.forEach(section => {
+                const questions = section.querySelectorAll('li');
+                questions.forEach(question => {
+                    if (question.textContent.toLowerCase().includes(searchInput)) {
+                        question.style.display = '';
+                    } else {
+                        question.style.display = 'none';
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
